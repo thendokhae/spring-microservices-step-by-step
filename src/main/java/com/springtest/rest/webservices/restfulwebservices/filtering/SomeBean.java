@@ -1,10 +1,12 @@
 package com.springtest.rest.webservices.restfulwebservices.filtering;
 
+import com.fasterxml.jackson.annotation.JsonFilter;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
+@JsonFilter("SomeBeanFilter")
 public class SomeBean {
 
-    @JsonIgnore
+   // @JsonIgnore
     private String field1;
     private String field2;
     private String field3;
